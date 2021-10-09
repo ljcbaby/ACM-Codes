@@ -2,7 +2,7 @@
 using namespace std;
 typedef unsigned long long ll;
 
-int n, t;
+int t;
 
 int main() {
 #ifndef ONLINE_JUDGE
@@ -10,11 +10,11 @@ int main() {
     freopen("1.out", "w", stdout);
     freopen("1.err", "w", stderr);
 #endif
-    cin >> n;
-    for (;n > 0;n--) {
-        cin >> t;
-        putchar(t);
-    }
+    cin >> t;
+    if (t % 2 == 0 && t > 2)
+        cout << "YES";
+    else
+        cout << "NO";
 #ifndef ONLINE_JUDGE
     fcloseall();
 #endif

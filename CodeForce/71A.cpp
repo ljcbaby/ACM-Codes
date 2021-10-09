@@ -2,7 +2,8 @@
 using namespace std;
 typedef unsigned long long ll;
 
-int n, t;
+int n;
+string s;
 
 int main() {
 #ifndef ONLINE_JUDGE
@@ -11,9 +12,13 @@ int main() {
     freopen("1.err", "w", stderr);
 #endif
     cin >> n;
+    getchar();
     for (;n > 0;n--) {
-        cin >> t;
-        putchar(t);
+        getline(cin, s);
+        if (s.length() > 10)
+            cout << s[0] << s.length() - 2 << s[s.length() - 1] << endl;
+        else
+            cout << s << endl;
     }
 #ifndef ONLINE_JUDGE
     fcloseall();
