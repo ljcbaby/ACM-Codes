@@ -14,7 +14,7 @@ int main(){
 	// freopen("1.in","r",stdin);
 	// freopen("1.out","w",stdout);
 	// freopen("1.err","w",stderr);
-    // cin >> n >> m;
+    cin >> n >> m;
     start = new node;
     pos = start;
     pos->data = 1;
